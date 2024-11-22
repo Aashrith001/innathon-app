@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "strictNullChecks": false, // Consider setting to true
+    "esModuleInterop": true,
+    "noImplicitAny": true, // Allows implicit 'any' types
+    "ignoreDeprecations": "5.0",
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "sourceMap": true,
+    "outDir": "dist/src",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext", // Optional: It's usually set in @tsconfig/node20
+    "strict": false, // Consider setting to true for strict type-checking
+    "resolveJsonModule": true // Optional: If working with JSON imports
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
