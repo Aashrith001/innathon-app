@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DB_NAME = exports.DB_SOURCE = exports.DB_HOST = exports.LOGS_PATH = exports.NAME = exports.PORT = void 0;
 exports.PORT = process.env.PORT || 3000;
-exports.NAME = process.env.NAME || 'Aashrith';
+exports.NAME = process.env.NAME || '';
 exports.LOGS_PATH = process.env.LOGS_PATH || '.logs';
 //DB
 exports.DB_HOST = process.env.DB_HOST || '';

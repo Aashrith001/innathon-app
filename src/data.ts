@@ -60,8 +60,8 @@ const work = [
                 "days": 3
             },
         ],
-        days: 3,
-        totalCost: 2000,
+        'days': 3,
+        'totalCost': 2000,
     },
     {
         "_id": "6473b91c34567890123466",
@@ -77,8 +77,8 @@ const work = [
                 "days": 2
             }
         ],
-        days: 7,
-        totalCost: 1000,
+        'days': 7,
+        'totalCost': 1000,
     }
 ]
 

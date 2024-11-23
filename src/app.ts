@@ -5,6 +5,7 @@ import cors from 'cors';
 import { PORT } from "./config";
 import { logger } from "./logger";
 import * as mongo from "./db";
+import { saveData } from "./services/inventory.service";
 
 export default class Main extends Server {
 
@@ -14,6 +15,7 @@ export default class Main extends Server {
         mongo.connect().then(dbConnect => {
             // this.loadControllers();
             // this.loadCrons();
+            saveData()
         });
     }
 

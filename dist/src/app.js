@@ -33,6 +33,7 @@ const cors_1 = __importDefault(require("cors"));
 const config_1 = require("./config");
 const logger_1 = require("./logger");
 const mongo = __importStar(require("./db"));
+const inventory_service_1 = require("./services/inventory.service");
 class Main extends core_1.Server {
     constructor() {
         super();
@@ -40,6 +41,7 @@ class Main extends core_1.Server {
         mongo.connect().then(dbConnect => {
             // this.loadControllers();
             // this.loadCrons();
+            (0, inventory_service_1.saveData)();
         });
     }
     corsPolicy() {
